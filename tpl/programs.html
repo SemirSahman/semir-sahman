@@ -1,0 +1,31 @@
+<div style="padding: 20px;">
+    <h1 class="display-4">Best fitness programs 2020</h1>
+    <br>
+    <table id="programs-table" class="display" style="width: 100%;padding: 10px;background-color: ;"></table>
+</div>
+
+
+<script type="text/javascript">
+    var dataSet = [
+        ["Xplosive", "Anaerobic", "5", "Matt Jackson", "4.9"],
+        ["Definition 1", "Anaerobic", "4", "Jack Jackson", "4.9"],
+        ["Running", "Aerobic", "3", "Alex McKenzie", "4.8"],
+        ["Fit", "Aerobic", "4", "Eric Wilson", "4.7"],
+        ["Max pump", "Anaerobic", "4", "Rick Doe", "4.7"],
+        ["Cycling", "Aerobic", "4", "Jenifer Doe", "4.6"],
+        ["Fit", "Aerobic", "4", "Dirk Roegan", "4.5"],
+        ["Definition 2", "Anaerobic", "4", "Jack Jackson", "4.5"],
+
+    ];
+
+    $('#programs-table').DataTable({
+        data: dataSet,
+        columns: [
+            { title: "Name"},
+            { title: "Type"},
+            { title: "Days weekly"},
+            { title: "Author"},
+            { title: "Rating"},
+        ]
+    })
+</script>
